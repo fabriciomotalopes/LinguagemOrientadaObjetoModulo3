@@ -1,12 +1,19 @@
 package br.com.livraria.test;
 
+import br.com.livraria.model.Autor;
 import br.com.livraria.model.Livro;
 
 public class RegrasDeDesconto {
     
     public static void main(String[] args) {
         
-        Livro livro = new Livro();
+        Autor autor = new Autor();
+
+        autor.setNome("Fabricio Lopes");
+        autor.setEmail("fabricio@fabricio.com.br");
+        autor.setCpf("000.000.000-00");
+        
+        Livro livro = new Livro(autor);
         
         livro.setValor(59.90);
         

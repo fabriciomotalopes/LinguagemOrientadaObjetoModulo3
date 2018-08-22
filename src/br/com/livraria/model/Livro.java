@@ -2,8 +2,9 @@ package br.com.livraria.model;
 
 public class Livro {
 
-    public Livro() {
-        System.out.println("Um livro foi criado!");
+    public Livro(Autor autor) {
+        this.isbn = "000.000.000-00";
+        this.autor = autor;
     }
 
     private String nome;

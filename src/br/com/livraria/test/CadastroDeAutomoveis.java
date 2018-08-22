@@ -9,18 +9,17 @@ public class CadastroDeAutomoveis {
 
         Proprietario proprietario = new Proprietario();
 
-        proprietario.nome = "Fabricio";
-        proprietario.cnh = "123456789";
-        proprietario.endereco = "Rua do Topografo, 68";
+        proprietario.setNome("Fabricio");
+        proprietario.setCnh("123456789");
+        proprietario.setEndereco("Rua do Topografo, 68");
 
-        Automovel automovel = new Automovel();
+        Automovel automovel = new Automovel(proprietario);
 
-        automovel.marca = "Fiat";
-        automovel.modelo = "Uno";
-        automovel.cor = "Preto";
-        automovel.ano = 2001;
-        automovel.valor = 10000;
-        automovel.proprietario = proprietario;
+        automovel.setMarca("Fiat");
+        automovel.setModelo("Uno");
+        automovel.setCor("Preto");
+        automovel.setAno(2001);
+        automovel.setValor(10000);
 
         automovel.aplicaDescontoDe(0.1);
 
@@ -28,18 +27,17 @@ public class CadastroDeAutomoveis {
 
         Proprietario outroProprietario = new Proprietario();
 
-        outroProprietario.nome = "Fabio";
-        outroProprietario.cnh = "123456987";
-        outroProprietario.endereco = "Rua Jose Marciano Pinto, 100";
+        outroProprietario.setNome("Fabio");
+        outroProprietario.setCnh("123456987");
+        outroProprietario.setEndereco("Rua Jose Marciano Pinto, 100");
 
-        Automovel outroAutomovel = new Automovel();
+        Automovel outroAutomovel = new Automovel(proprietario);
 
-        outroAutomovel.marca = "Toyota";
-        outroAutomovel.modelo = "Hilux";
-        outroAutomovel.cor = "Branca";
-        outroAutomovel.ano = 2010;
-        outroAutomovel.valor = 100000;
-        outroAutomovel.proprietario = outroProprietario;
+        outroAutomovel.setMarca("Toyota");
+        outroAutomovel.setModelo("Hilux");
+        outroAutomovel.setCor("Branca");
+        outroAutomovel.setAno(2010);
+        outroAutomovel.setValor(100000);
 
         outroAutomovel.aplicaDescontoDe(0.4);
 

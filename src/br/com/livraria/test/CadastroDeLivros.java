@@ -13,13 +13,12 @@ public class CadastroDeLivros {
         autor.setEmail("fabricio@fabricio.com.br");
         autor.setCpf("000.000.000-00");
 
-        Livro livro = new Livro();
+        Livro livro = new Livro(autor);
 
         livro.setNome("Java 8 na Prática");
         livro.setDescricao("Novos recursos da linguagem.");
         livro.setValor(59.90);
-        livro.setIsbn("000-00-00000-00-0");
-        livro.setAutor(autor);
+        livro.setIsbn("222-22-22222-22-2");
 
         livro.aplicaDescontoDe(0.1);
 
@@ -31,13 +30,12 @@ public class CadastroDeLivros {
         outroAutor.setEmail("fernando@fernando.com.br");
         outroAutor.setCpf("111.111.111-11");
 
-        Livro outroLivro = new Livro();
+        Livro outroLivro = new Livro(outroAutor);
 
         outroLivro.setNome("Lógica de Programação");
         outroLivro.setDescricao("Crie seus primeiros programas");
         outroLivro.setValor(59.90);
         outroLivro.setIsbn("111-11-11111-11-1");
-        outroLivro.setAutor(outroAutor);
 
         outroLivro.aplicaDescontoDe(0.2);
 
