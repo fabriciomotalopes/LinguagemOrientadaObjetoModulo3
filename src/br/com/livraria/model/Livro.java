@@ -1,6 +1,6 @@
 package br.com.livraria.model;
 
-public abstract class Livro {
+public abstract class Livro implements Produto{
 
     public Livro(Autor autor) {
         this.isbn = "000.000.000-00";
@@ -12,9 +12,7 @@ public abstract class Livro {
     private double valor;
     private String isbn;
     private Autor autor;
-    
-    
-    public abstract boolean aplicaDescontoDe(double porcentagem);
+ 
 
     public boolean temAutor() {
         return this.autor != null;

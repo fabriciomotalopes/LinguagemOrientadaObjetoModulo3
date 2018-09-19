@@ -22,7 +22,7 @@ public class CadastroDeLivros {
         livro.setValor(59.90);
         livro.setIsbn("222-22-22222-22-2");
 
-        livro.aplicaDescontoDe(0.1);
+        //livro.aplicaDescontoDe(0.1);
 
         livro.mostrarDetalhes();
 
@@ -39,7 +39,7 @@ public class CadastroDeLivros {
         outroLivro.setValor(59.90);
         outroLivro.setIsbn("111-11-11111-11-1");
 
-        outroLivro.aplicaDescontoDe(0.2);
+        //outroLivro.aplicaDescontoDe(0.2);
 
         outroLivro.mostrarDetalhes();
 

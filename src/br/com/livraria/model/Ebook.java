@@ -1,6 +1,6 @@
 package br.com.livraria.model;
 
-public class Ebook extends Livro {
+public class Ebook extends Livro implements Promocional{
 
     public Ebook(Autor autor) {
         super(autor);

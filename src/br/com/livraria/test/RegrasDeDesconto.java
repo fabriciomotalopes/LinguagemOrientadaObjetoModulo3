@@ -22,11 +22,12 @@ public class RegrasDeDesconto {
 
         System.out.println("Valor sem Desconto: " + livro.getValor());
 
+        /*
         if (!livro.aplicaDescontoDe(0.2)) {
             System.out.println("O desconto foi maior que 30%");
         } else {
             System.out.println("Valor com Desconto: " + livro.getValor());
-        }
+        }*/
 
         Ebook ebook = new Ebook(autor);
 
@@ -46,12 +47,12 @@ public class RegrasDeDesconto {
 
         System.out.println("Valor sem Desconto: " + miniLivro.getValor());
 
+        /*
         if (!miniLivro.aplicaDescontoDe(0.2)) {
             System.out.println("Mini-Livro não tem desconto!");
         } else {
             System.out.println("Valor com Desconto: " + miniLivro.getValor());
-        }
-
+        }*/
     }
 
 }
